@@ -67,6 +67,7 @@ class GAMaxOneMatrix(object):
             child[gene] = 1
         else:
             child[gene] = 0
+        child[gene] = np.random.randint(10)
         return child
 
     def breed_population(self, fits_pop):

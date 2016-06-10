@@ -27,11 +27,11 @@ def test(gamma):
 
 class GAClassifier(object):
     def __init__(self):
-        self.prob_crossover = 0.6
-        self.prob_mutation = 0.05
-        self.population_size = 20
-        self.iteration_limit = 50
-        self.gene_size = 8
+        self.prob_crossover = 0.9
+        self.prob_mutation = 0.4
+        self.population_size = 30
+        self.iteration_limit = 20
+        self.gene_size = 17
         self.nb_parameter = 1
         self.ga = MaxOneSolution.GAMaxOneMatrix()
         self.ga.max_one = self.nb_parameter * self.gene_size
@@ -89,3 +89,4 @@ def start():
     ga.run()
 
 start_graph()
+# print test(0.00103035877348066)
